@@ -1,0 +1,28 @@
+create a input buton that will print the value of the input in the website, use the latest bootstrap here, use inline javascript code and functionfor that
+<html>
+<head>
+    <title>Input Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Input</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter input">
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("exampleInputEmail1").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+    <p id="demo"></p>
+</html>
